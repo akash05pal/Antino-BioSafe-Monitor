@@ -152,3 +152,5 @@ Build & install the app:
 
 ## Conclusion
 BioSafe Monitor is a smart, affordable, and scalable solution designed to protect sanitation workers from life-threatening gas exposure. By integrating real-time IoT monitoring, AI-driven predictions, GSM-based alerts, and comprehensive data analytics, it enhances workplace safety while providing long-term insights to improve safety policies and worker health management.
+
+## DEMO VIDEO LINK : 
