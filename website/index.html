@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Let us help you assist with your product selection process!">
+  <meta name="author" content="Aayush">
+  <title>Home -BoiSafe Monitor</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="toast.css">
+  <style>
+  button {
+    border-radius: 20px;
+    /* border: 1px solid , #419235; */
+    background-color: #419235;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  </style>
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="https://imgs.search.brave.com/8Akq34R0qcyHsB0Di53l_r9h9-bJFrQurbBVliO0vyY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlY2l2aWxpbmRp/YS5jb20vaW1hZ2Vz/L21ha2UtaW4taW5k/aWEuanBn" alt="farmitr logo" height="200px" width="80px">
+          
+        </a>
+         <!-- Nav Menu -->
+         <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero" class="active">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="loginform.html"><button type="submit" class="btn-btn-primary">Login\signup</button></a></li>
+          </ul>
+  
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <!-- End Nav Menu -->
+  
+      
+      </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+        <!-- Hero Section - Home Page -->
+        <section id="hero" class="hero">
+         <img src="data:image/jpeg;base64,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" alt="" data-aos="fade-in" />
+    
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10">
+                <img src="logo.png" alt="FARMITR Icon" style="width: 120px; height: 120px;" data-aos="fade-up" data-aos-delay="100">
+                <p data-aos="fade-up" data-aos-delay="200">
+                  
+    
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <hr>
+                  Safeguarding Lives, One Breath at a Time
+    
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <!-- <form action="#" class="sign-up-form d-flex" autocomplete="on" data-aos="fade-up" data-aos-delay="300">
+                  <input type="text" class="form-control" placeholder="Search for the Product"
+                    autocomplete="additional-name" />
+                  <input type="submit" class="searchButton btn btn-primary" value="Search" id="searchButton" /> -->
+                </form>   
+                <div class="result-box"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Hero Section -->
+             <!-- About Section - Home Page -->
+     <section id="about" class="about">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+            <div class="col-xl-5 content">
+              <h3>About Us</h3>
+              <h2>What Is BioSafe Monitor</h2>
+              <p>
+                Safety Monitoring System for Workers
+               
+              </p>
+              <a href="#team" class="read-more"><span>Know Us</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+  
+            <div class="col-xl-7">
+              <div class="row gy-4 icon-boxes">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box">
+                    <i class="bi bi-clipboard-pulse"></i>
+                    <h3>MAKE IN INDIA</h3>
+                    <p>
+                       
+                      <strong>First Ever</strong>,fully indegenously made 
+  
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                      <i class="bi bi-buildings"></i>
+                      <h3>Easy to operate</h3>
+                      <p>
+                       
+
+                        <strong>Notifies of danger through sms on your mobile phones</strong>.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- End Icon Box -->
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                      <i class="bi bi-graph-up-arrow"></i>
+                      <h3>Protector for 'Workers'</h3>
+                      <p>
+                        Smart Detection
+                        <strong>IOT Based</strong> 
+                      </p>
+                    </div>
+                  </div>
+                  <!-- End Icon Box -->
+    
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box">
+                      <i class="bi bi-command"></i>
+                      <h3>Increase Safety</h3>
+                      <p>
+                        
+                        <strong>Gas Detection</strong> Real time alert and warnings.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- End Icon Box -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About Section -->
+         <!-- Features Section - Home Page -->
+ <section id="features" class="features">
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Workflow</h2>
+      <p>The services it offers</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+      <div class="row gy-4 align-items-stretch justify-content-between features-item" id="phone">
+        <div class="col-lg-4 d-flex justify-content-center flex-column" data-aos="fade-up">
+          <h3>Real-Time Gas Monitoring</h3>
+          <p>
+            Continuously monitor toxic gas levels in confined spaces
+          </p>
+          <!-- <a href="./assets/html/mobile.html" class="btn btn-get-started align-self-start">Explore</a> -->
+        </div>
+        <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+          <img
+            src="flowchart.jpg"
+            class="img-fluid" alt="" />
+        </div>
+      </div>
+      <!-- Features Item -->
+
+      <div class="tablet row gy-4 align-items-stretch justify-content-between features-item" id="tablet">
+        <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+          <img src="https://lh3.googleusercontent.com/proxy/nq3nuT4CG5t00bV7pueGW7mAYOlgMbEenspcNuOadUG2zgRRhXQKK3e7elwi4vNwRUsWCJYdb67L_KNc8zUlGNQ1cxeQacSk_U9QluxAlYU-D61CKU_r106EKBjPykL8g9DFE5WdfydosNdMGcj5yg"
+            class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+          <h3>Automated Alert System</h3>
+          <p>
+            Trigger immediate alerts when gas levels exceed safety thresholds.
+
+          </p>
+          <!-- <a href="./assets/html/tablet.html" class="btn btn-get-started align-self-start">Explore</a> -->
+        </div>
+      </div>
+      <!-- Features Item -->
+
+      <div class="row gy-4 align-items-stretch justify-content-between features-item" id="laptop">
+        <div class="col-lg-4 d-flex justify-content-center flex-column" data-aos="fade-up">
+          <h3>Mobile App and Cloud Data Storage</h3>
+          <p>
+            Provide real-time monitoring via a user-friendly mobile application.
+
+          </p>
+          <!-- <a href="./assets/html/laptop.html" class="btn btn-get-started align-self-start">Explore</a> -->
+        </div>
+        <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/004/946/981/non_2x/cloud-storage-concept-onboarding-screens-for-mobile-app-templates-users-upload-files-processing-and-computing-ui-ux-gui-user-interface-kit-with-people-scenes-for-web-design-illustration-vector.jpg"
+            class="img-fluid" alt="" />
+        </div>
+      </div>
+       <!-- Features Item -->
+
+       <div class="row gy-4 align-items-stretch justify-content-between features-item" id="audio">
+        <div class="col-lg-4 align-items-center features-img-bg" data-aos="zoom-out">
+          <!-- <img src="assets/img/audio.png" class="img-fluid" alt=""> -->
+          <img
+            src="https://www.columbiasouthern.edu/media/bsvereaw/workplace-safety-priority_small.jpg"
+            class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+          <h3>Enhance Workers Safety</h3>
+          <p>
+            Use ML to predict potential gas surges based on historical data.
+            Improve safety for workers in hazardous environments through IoT and predictive analytics.
+
+
+
+          </p>
+          
+          <!-- <a href="./assets/html/audio.html" class="btn btn-get-started align-self-start">Explore</a> -->
+        </div>
+      </div>
+      <!-- Features Item -->
+    </div>
+  </section>
+  <!-- End Features Section -->
+  <!-- Pricing Section - Home Page -->
+  <section id="pricing" class="pricing">
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <p>
+        Streamline your experience effortlessly - unlock the full potential
+        with our Premium Subscriptions.
+      </p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="pricing-item">
+            <h3>Basic Plan</h3>
+            <div class="icon">
+              <i class="bi bi-box"></i>
+            </div>
+            <h4><sup>₹</sup>2000<span></span></h4>
+            <ul>
+                <li>
+                    <i class="bi bi-check"></i> <span>Rental Basis</span>
+                  </li>
+              <li>
+                <i class="bi bi-check"></i> <span>Gas Monitoring</span>
+              </li>
+              
+              <li>
+                <i class="bi bi-check"></i> <span>Alert System</span>
+              </li>
+              <li>
+                <i class="bi bi-check"></i> <span>Sms and call Alerts</span>
+              </li>
+              <li>
+                <i class="bi bi-check"></i> <span>Real Time Data on Phone</span>
+              </li>
+              <li class="na">
+                <i class="bi bi-x"></i>
+                <span>Prediction</span>
+              </li>
+              
+            </ul>
+            <div class="text-center">
+              <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Pricing Item -->
+
+        <div class="col-lg-4">
+          
+        </div>
+        <!-- End Pricing Item -->
+
+        <div class="col-lg-4">
+          <div class="pricing-item">
+            <h3>Farmitr Plus</h3>
+            <div class="icon">
+              <i class="bi bi-send"></i>
+            </div>
+            <h4><sup>₹</sup>3000</h4>
+            <ul>
+                <li>
+                    <i class="bi bi-check"></i> <span>Full Installion as product</span>
+                  </li>
+              <li>
+                <i class="bi bi-check"></i> <span>Gas Monitoring</span>
+              </li>
+              <li>
+                <i class="bi bi-check"></i> <span>Alert System</span>
+              </li>
+              <li>
+                <i class="bi bi-check"></i> <span>Sms and call Alerts</span>
+              </li>
+              <li>
+                <i class="bi bi-check"></i>
+                <span>Real TIme Data On Phone</span>
+              </li>
+              <li>
+                <i class="bi bi-check"></i>
+                <span>Predictive Gas Leak Detection</span>
+              </li>
+              
+            </ul>
+            <div class="text-center">
+              <a href="./assets/supplements/checkout200.html" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Pricing Item -->
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Section -->
+   <!-- Faq Section - Home Page -->
+   <section id="faq" class="faq">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="content px-xl-5">
+            <h3>
+              <span>Frequently Asked </span><strong>Questions</strong>
+            </h3>
+            <p>
+              We have answered the most common questions but if you have any
+              other questions you can get in touch with us through the
+              contact form below.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-container">
+            <div class="faq-item faq-active">
+              <h3>
+                <span class="num">1.</span>
+                <span>How it can be operate by common Worker?
+                </span>
+              </h3>
+              <div class="faq-content">
+                <p>
+                  Totally based on smart detection and alerting system, only need of Installion at appropriate place.
+                </p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div>
+            <!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>
+                <span class="num">2.</span>
+                <span>What is the lifetime of the product</span>
+              </h3>
+              <div class="faq-content">
+                <p>
+                  steel container is used for protection,depending upon thr life of sensor if not damaged physically can operate for 3 years.
+                </p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div>
+            <!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>
+                <span class="num">3.</span>
+                <span>what is the guarantee/warantee policy?
+                </span>
+              </h3>
+              <div class="faq-content">
+                <p>
+                  Service will be provided, depending upon the level of damage.
+                </p>
+              </div>
+              <i class="faq-toggle bi bi-chevron-right"></i>
+            </div>
+            <!-- End Faq item-->
+
+            
+            <!-- End Faq item-->
+
+           
+            <!-- End Faq item-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Faq Section -->
+  <!-- End Faq Section -->
+  <!-- Contact Section - Home Page -->
+  <section id="contact" class="contact">
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Get in touch for personalized assistance</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p>KIET Ghaziabad, Muradnagar</p>
+                <p>UttarPradesh, IN 201206</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="300">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p>1090</p>
+                <p>911</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="400">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>akashpal@gmail.com</p>
+                <p>akash.2226cs@kiet.edu</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="500">
+                <i class="bi bi-clock"></i>
+                <h3>Open Hours</h3>
+                <p>Monday - Friday</p>
+                <p>9:10AM - 04:50PM</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form class="php-email-form" id="contactForm">
+            <!-- <form action="http://127.0.0.1:5500/send-email" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"> -->
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" id="phone" placeholder="Subject" required />
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" id="message" placeholder="Message" required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+
+                <button type="submit" onclick="sendEmail()">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Contact Form -->
+      </div>
+    </div>
+  </section>
+  <div class="toast" id="successToast">
+    <span class="message">Email sent successfully!</span>
+  </div>
+  <!-- End Contact Section -->
+  
+  <!-- Tech Stack - Home Page -->
+  <div class="container section-title p-0" data-aos="fade-up">
+    <h2>Tech Stack Used</h2>
+  </div>
+
+  <section id="clients" class="clients">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row gy-4">
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+            class="img-fluid" alt="HTML" />
+        </div>
+        <!-- End Client Item -->
+
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+            class="img-fluid" alt="CSS" />
+        </div>
+        <!-- End Client Item -->
+
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            class="img-fluid" alt="JS" />
+        </div>
+        <!-- End Client Item -->
+
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+            class="img-fluid" alt="Bootstrap" />
+        </div>
+        <!-- End Client Item -->
+
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src="https://imgs.search.brave.com/d85rAqnk2bn45HI7iLt5XnVbWrTL2k42_lI4ubQjqx0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2xvZ28tbW9u/Z29kYi1wbmctc3Rh/bmRhcmQtbG9nby00/MTY3LmpwZw" class="img-fluid"
+            alt="mongoDB" />
+        </div>
+        <!-- End Client Item -->
+
+        <div class="col-xl-2 col-md-3 col-6 client-logo">
+          <img src="https://imgs.search.brave.com/5W_YFg1SEn8LSEtESVgpRT09XQS0VwzHqWCJt89PHOY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9ub2RlanMtMS5z/dmc.svg" class="img-fluid" alt="node js" />
+        </div>
+        <!-- End Client Item -->
+      </div>
+    </div>
+  </section>
+  <!-- End Tech Stack Section -->
+</main>
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span>BOISAFE MONITOR</span>
+        </a>
+        <p>Revolution In Safety Efforts.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+          <a href="https://github.com/aayushraghav93/"><i class="bi bi-github"></i></a>
+          <a href="https://instagram.com/_raaghav_93"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/aayushraghav93"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#team">Know us</a></li>
+          <li>
+            <a href="">Terms & Conditions</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>KIET Ghaziabad,</p>
+        <p>Muradnagar, UttarPradesh</p>
+        <p>India</p>
+        <p class="mt-4"><strong>Phone:</strong> <span>1090</span></p>
+        <p>
+          <strong>Email:</strong> <span>aayush.2226cseai1108@kiet.edu</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>
+      &copy; <span>Copyright</span> <strong class="px-1">BIOSAFE MONITOR</strong>
+      <span>All Rights Reserved</span>
+    </p>
+    <div class="credits">
+      Designed by
+      <a href="https://github.com/aayushraghav93" target="_blank">Team Gladiators</a>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+<!-- Scroll Top Button -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!-- chatbot -->
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+    composerPlaceholder: "Chat with Farmitr",
+    botConversationDescription:
+      "This chatbot was built surprisingly fast with Botpress",
+    botId: "69f03d93-47fb-4f42-b407-80c8e7e54ad9",
+    hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+    messagingUrl: "https://messaging.botpress.cloud",
+    clientId: "69f03d93-47fb-4f42-b407-80c8e7e54ad9",
+    webhookId: "b5baced0-2536-4110-94c6-a3a084c0a363",
+    lazySocket: true,
+    themeName: "prism",
+    botName: "Farmitr",
+    avatarUrl:
+      "https://images-platform.99static.com//X0F3CDfCL6LcdPsSJNtRXSGn86Q=/108x1101:902x1895/fit-in/500x500/99designs-contests-attachments/126/126736/attachment_126736972",
+    stylesheet:
+      "https://webchat-styler-css.botpress.app/prod/71ffe266-f619-4ca4-98ee-0c9aea273dee/v60920/style.css",
+    frontendVersion: "v1",
+    useSessionStorage: true,
+    theme: "prism",
+    themeColor: "#2563eb",
+  });
+</script>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/utils/autocomplete.js"></script>
+
+</body>
+
+</html>
