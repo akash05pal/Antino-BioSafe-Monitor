@@ -1,6 +1,8 @@
 # Antino-BioSafe-Monitor
 
 # BioSafe Monitor: AIoT-based Device for Real-Time Toxic Gas Detection in Sewers & Septic Tanks
+## DEMO VIDEO LINK : https://www.youtube.com/watch?v=hBV3V14wlOM
+
 
 ## Problem Statement
 Despite strict regulations prohibiting hazardous manual cleaning of sewers and septic tanks without safety equipment, these dangerous practices persist. Sanitation workers face life-threatening risks due to toxic gas exposure, including hydrogen sulfide (H₂S), methane (CH₄), carbon monoxide (CO), ammonia (NH₃), and sulfur dioxide (SO₂). In India alone, over 900 deaths related to manual scavenging have been recorded in the last decade, with more than 100 fatalities in 2023 alone. Prolonged exposure to these gases can cause severe respiratory issues, neurological damage, and sudden fatalities.
@@ -153,4 +155,4 @@ Build & install the app:
 ## Conclusion
 BioSafe Monitor is a smart, affordable, and scalable solution designed to protect sanitation workers from life-threatening gas exposure. By integrating real-time IoT monitoring, AI-driven predictions, GSM-based alerts, and comprehensive data analytics, it enhances workplace safety while providing long-term insights to improve safety policies and worker health management.
 
-## DEMO VIDEO LINK : 
+## DEMO VIDEO LINK : https://www.youtube.com/watch?v=hBV3V14wlOM
