@@ -94,6 +94,10 @@ Place google-services.json (from Firebase) inside the app/ folder.
 Build & install the app:
 ./gradlew installDebug
 
+### Alternatively, you can follow the Blynk app instructions in the `Blynk_Setup.md` file located in the hardware code folder.
+
+
+
 ### Steps to Set Up:
 1. **Hardware Assembly**: Connect gas sensors to the microcontroller and set up power sources.
 2. **Software Installation**:
